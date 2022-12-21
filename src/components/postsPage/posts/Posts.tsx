@@ -5,6 +5,7 @@ import {fetchPosts} from "../../../reducers/posts-reducer";
 import {PostItem} from "../postItem/PostItem";
 import {Line} from "../../../common/Line/Line";
 import {Button} from "../../../common/Button/Button";
+import ButtonArrowIcon from "../../../assets/icons/Button_arrow.svg";
 
 export const Posts = () => {
     const dispatch = useAppDispatch()
@@ -28,7 +29,10 @@ export const Posts = () => {
             <div className={s.blockPosts}>
                 {postsMap}
             </div>
-            <Button/>
+            <Button superClassName={"showButton"}>
+                Show more
+                <img src={ButtonArrowIcon}/>
+            </Button>
 
         </div>
     );

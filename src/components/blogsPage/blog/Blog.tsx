@@ -10,6 +10,7 @@ import {PostItem} from "../../postsPage/postItem/PostItem";
 import {Line} from "../../../common/Line/Line";
 import {BackTo} from "../../../common/BackTo/BackTo";
 import {Button} from "../../../common/Button/Button";
+import ButtonArrowIcon from "../../../assets/icons/Button_arrow.svg";
 
 export const Blog = () => {
     const {blogId} = useParams()
@@ -39,7 +40,10 @@ export const Blog = () => {
             <div className={s.blogPosts}>
                 {postsMap}
             </div>
-            <Button/>
+            <Button superClassName={"showButton"}>
+                Show more
+                <img src={ButtonArrowIcon}/>
+            </Button>
         </div>
     );
 };

@@ -4,8 +4,9 @@ import {BlogItem} from "../blogItem/BlogItem";
 import {fetchBlogs} from "../../../reducers/blogs-reducer";
 import {useAppDispatch, useAppSelector} from "../../../reducers/store";
 import SearchIcon from './../../../assets/icons/Search.svg'
-import {Button} from "../../../common/Button/Button";
 import {Line} from "../../../common/Line/Line";
+import {Button} from "../../../common/Button/Button";
+import ButtonArrowIcon from "../../../assets/icons/Button_arrow.svg";
 
 export const Blogs = () => {
     const dispatch = useAppDispatch()
@@ -38,7 +39,10 @@ export const Blogs = () => {
                 </select>
             </div>
             {blogsMap}
-            <Button/>
+            <Button superClassName={"showButton"}>
+                Show more
+                <img src={ButtonArrowIcon}/>
+            </Button>
         </div>
     );
 };
