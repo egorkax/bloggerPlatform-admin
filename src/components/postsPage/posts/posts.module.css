@@ -1,0 +1,29 @@
+
+.blockSelect {
+    margin-top: 20px;
+    width: 970px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.select {
+    outline: none;
+    background-color: #f8f4f4;
+    width: 256px;
+    height: 36px;
+    border: 1px solid #DEDBDC;
+    border-radius: 2px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1A1718;
+    padding-left: 10px;
+
+}
+
+.blockPosts {
+    display: flex;
+    flex-wrap: wrap;
+}

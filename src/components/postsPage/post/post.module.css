@@ -1,0 +1,83 @@
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-left: 15px;
+}
+
+.blogNameHeader {
+    margin-left: 10px;
+    width: 160px;
+    height: 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #1A1718;
+}
+
+.blockTitleBlog {
+    display: flex;
+    align-content: center;
+    margin-top: 48px;
+}
+
+.blogName {
+    font-family: 'Inter';
+    margin-left: 25px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1A1718;
+}
+
+.titlePost {
+    display: inline-block;
+    margin-top: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 24px;
+    color: #1A1718;
+}
+
+.createPostDate {
+    display: block;
+    margin-top: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #797476;
+}
+
+.blogLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 940px;
+    height: 432px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: 60px;
+}
+
+.blockPostContent {
+    width: 940px;
+    margin-top: 30px;
+    padding-bottom: 50px;
+}

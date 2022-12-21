@@ -1,0 +1,82 @@
+.blockBlog {
+    width: 970px;
+    height: 170px;
+    margin-top: 15px;
+}
+
+.blog {
+    display: flex;
+}
+
+.blockImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 156px;
+    height: 156px;
+    background: #FFFFFF;
+    border: 1px solid #DEDBDC;
+    border-radius: 50%;
+}
+
+
+.blockInfo {
+    margin-left: 10px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.titleBlog {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #1A1718;
+}
+
+.website {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #737067;
+
+}
+
+.linkSite {
+    color: #3677F7;
+}
+
+.description {
+    width: 772px;
+    height: 48px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1A1718;
+}
+
+.blockImgOpen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 144px;
+    height: 144px;
+    background: #FFFFFF;
+    border: 5px solid #DEDBDC;
+    border-radius: 50%;
+}
+
+.createDate {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #797476;
+}

@@ -1,0 +1,62 @@
+.blockPostItem {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    margin-right: 35px;
+}
+
+.blockDescPost {
+    display: flex;
+}
+
+.blockImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 180px;
+    background-color: #FFFFFF;
+}
+
+.blogLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background-color: #FFFFFF;
+    margin: auto 0;
+}
+
+.postDescMargin {
+    margin-left: 10px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.titlePost {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    color: #1A1718;
+}
+
+.descPost {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #1A1718;
+}
+
+.datePost {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    color: #636262;
+}

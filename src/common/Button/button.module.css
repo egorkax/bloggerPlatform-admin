@@ -1,0 +1,22 @@
+.blockButton {
+    margin-left: 450px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.button {
+    display: flex;
+    background: #f8f4f4;
+    border: 1px black solid;
+    align-items: center;
+    justify-content: space-around;
+    width: 130px;
+    height: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #1A1718;
+    cursor: pointer;
+}

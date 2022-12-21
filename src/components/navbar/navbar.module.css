@@ -1,0 +1,48 @@
+.blockNav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
+    width: 252px;
+    height: 1147px;
+    background: #FCFBFB;
+    padding-top: 43px;
+}
+
+.blockItemNav {
+    display: flex;
+    width: 252px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70px;
+    height: 50px;
+    margin-left: 67px;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1A1718;
+
+
+}
+
+.item.active {
+    color: #F8346B;
+
+}
+
+.line {
+    margin-left: 113px;
+    margin-top: 5px;
+    width: 2px;
+    height: 30px;
+    background: #F8346B;
+    border-radius: 2px 0px 0px 2px;
+
+}
+

@@ -1,0 +1,50 @@
+
+.blockSearch {
+    display: flex;
+    width: 970px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.blockInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 672px;
+    height: 36px;
+    border: 1px solid #DEDBDC;
+    border-radius: 2px;
+}
+
+.input {
+    width: 620px;
+    background: #f8f4f4;
+    border: none;
+    outline: none;
+
+}
+
+.input::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #B3B0B1;
+}
+
+.blockSelect {
+    outline: none;
+    background-color: #f8f4f4;
+    width: 256px;
+    height: 36px;
+    border: 1px solid #DEDBDC;
+    border-radius: 2px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1A1718;
+    padding-left: 10px;
+}
