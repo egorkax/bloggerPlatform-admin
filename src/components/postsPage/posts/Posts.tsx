@@ -26,6 +26,9 @@ export const Posts = () => {
                     <option value="2">Old posts first</option>
                 </select>
             </div>
+            <div className={s.blockButton}>
+                <Button superClassName={"editButton"}>Add post</Button>
+            </div>
             <div className={s.blockPosts}>
                 {postsMap}
             </div>

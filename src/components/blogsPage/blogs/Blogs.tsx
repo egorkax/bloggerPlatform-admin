@@ -7,9 +7,11 @@ import SearchIcon from './../../../assets/icons/Search.svg'
 import {Line} from "../../../common/Line/Line";
 import {Button} from "../../../common/Button/Button";
 import ButtonArrowIcon from "../../../assets/icons/Button_arrow.svg";
+import {useNavigate} from "react-router-dom";
 
 export const Blogs = () => {
     const dispatch = useAppDispatch()
+    const navigate = useNavigate()
     const blogs = useAppSelector(state => state.blogs.blogs)
     useEffect(() => {
 
@@ -22,6 +24,10 @@ export const Blogs = () => {
                       webSite={e.websiteUrl}/>
         </div>
     })
+    const navigateHandler = () => {
+
+        navigate('/newBlog')
+    }
     return (
         <div>
             <h2>Blogs</h2>
@@ -39,7 +45,7 @@ export const Blogs = () => {
                 </select>
             </div>
             <div className={s.blockButton}>
-                <Button superClassName={"editButton"}>Add blog</Button>
+                <Button superClassName={"editButton"} onClick={navigateHandler}>Add blog</Button>
             </div>
             {blogsMap}
             <Button superClassName={"showButton"}>

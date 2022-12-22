@@ -20,6 +20,8 @@ export const blogsReducer = (state = initialState, action: ActionsType) => {
             return {...state, blogs: action.blogs}
         case "SET-BLOG":
             return {...state, blog: action.blog}
+        case "ADD-BLOG":
+            return {...state, blogs: [action.blog, ...state.blogs]}
         default:
             return state;
     }
@@ -29,12 +31,13 @@ export const setBlogsAC = (blogs: BlogType[]) =>
     ({type: "SET-BLOGS", blogs} as const)
 export const setBlogAC = (blog: BlogType) =>
     ({type: "SET-BLOG", blog} as const)
+export const addBlogAC = (blog: BlogType) =>
+    ({type: "ADD-BLOG", blog} as const)
 
 //saga
 export function* fetchBlogsWorkerSaga(): any {
     const res = yield call(blogsAPI.getBlogs)
     yield put(setBlogsAC(res.data.items))
-    debugger
 }
 
 export const fetchBlogs = () => ({type: 'BLOGS/FETCH-BLOGS'})
@@ -48,10 +51,21 @@ export function* fetchBlogWorkerSaga(action: ReturnType<typeof fetchBlog>): any 
 
 export const fetchBlog = (blogId: string) => ({type: 'BLOGS/FETCH-BLOG', blogId})
 
+export function* createBlogWorkerSaga(action: ReturnType<typeof createBlog>): any {
+    const res = yield call(blogsAPI.createBlog, action.payload)
+    yield put(addBlogAC(res.data))
+}
+
+export const createBlog = (payload: { name: string, description: string, websiteUrl: string }) => ({
+    type: 'BLOGS/CREATE-BLOG',
+    payload
+})
+
 
 export function* blogsSagaWatcher() {
     yield takeEvery('BLOGS/FETCH-BLOGS', fetchBlogsWorkerSaga)
     yield takeEvery('BLOGS/FETCH-BLOG', fetchBlogWorkerSaga)
+    yield takeEvery('BLOGS/CREATE-BLOG', createBlogWorkerSaga)
 
 }
 
@@ -63,3 +77,4 @@ type InitialStateType = {
 type ActionsType =
     | ReturnType<typeof setBlogsAC>
     | ReturnType<typeof setBlogAC>
+    | ReturnType<typeof addBlogAC>

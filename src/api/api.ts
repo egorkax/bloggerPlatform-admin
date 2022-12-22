@@ -19,6 +19,9 @@ export const blogsAPI = {
     getBlogPosts(blogId: string) {
         return instance.get<ResponseType<PostType[]>>(`blogs/${blogId}/posts`)
     },
+    createBlog(payload: { name: string, description: string, websiteUrl: string }) {
+        return instance.post<BlogType>(`blogs`, payload)
+    }
 
 }
 export const postsAPI = {

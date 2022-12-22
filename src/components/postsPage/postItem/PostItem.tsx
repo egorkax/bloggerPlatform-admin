@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import s from './postItem.module.css'
 import AvaIcon from '../../../assets/icons/Ava.svg'
 import {NavLink} from "react-router-dom";
+import {Setting} from "../../../common/Setting/Setting";
+import {DeletePackModal} from "../../../common/Modal/DeleteModal/DeleteModal";
 
 export type PostItemType = {
     postTitle: string
@@ -12,6 +14,7 @@ export type PostItemType = {
 
 }
 export const PostItem = (props: PostItemType) => {
+    const [openDeleteModal, setOpenDeleteModal] = useState<boolean>(false)
     return (
         <div className={s.blockPostItem}>
             <div className={s.blockImg}>
@@ -32,7 +35,12 @@ export const PostItem = (props: PostItemType) => {
 
                     <p className={s.datePost}>{props.creatDate}</p>
                 </div>
+                <div className={s.blockSetting}>
+                    <Setting openDeleteModal={() => setOpenDeleteModal(true)}/>
+                </div>
             </div>
+            <DeletePackModal isOpen={openDeleteModal} closeModalWindow={() => setOpenDeleteModal(false)}
+                             header={"post"}/>
         </div>
     );
 };

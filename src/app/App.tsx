@@ -7,6 +7,7 @@ import {Blogs} from "../components/blogsPage/blogs/Blogs";
 import {Posts} from "../components/postsPage/posts/Posts";
 import {Blog} from "../components/blogsPage/blog/Blog";
 import {Post} from "../components/postsPage/post/Post";
+import {NewBlog} from "../components/blogsPage/newBlog/NewBlog";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                 <div className={s.content}>
                     <Routes>
                         <Route path={'/blogs'} element={<Blogs/>}/>
+                        <Route path={'/newBlog'} element={<NewBlog/>}/>
                         <Route path={'/blog/:blogId'} element={<Blog/>}/>
                         <Route path={'/posts'} element={<Posts/>}/>
                         <Route path={'/post/:postId'} element={<Post/>}/>

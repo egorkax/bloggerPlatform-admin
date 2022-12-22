@@ -5,10 +5,6 @@
     margin-right: 35px;
 }
 
-.blockDescPost {
-    display: flex;
-}
-
 .blockImg {
     display: flex;
     align-items: center;
@@ -16,6 +12,12 @@
     width: 300px;
     height: 180px;
     background-color: #FFFFFF;
+}
+
+.blockDescPost {
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
 }
 
 .blogLogo {
@@ -38,25 +40,24 @@
 }
 
 .titlePost {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     color: #1A1718;
 }
 
 .descPost {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     color: #1A1718;
 }
 
 .datePost {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.02em;
     color: #636262;
+}
+
+.blockSetting {
+    margin-top: 15px;
+    margin-left: 70px;
 }

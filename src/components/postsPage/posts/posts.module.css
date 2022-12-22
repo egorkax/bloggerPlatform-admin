@@ -23,6 +23,13 @@
 
 }
 
+.blockButton {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    max-width: 920px;
+}
+
 .blockPosts {
     display: flex;
     flex-wrap: wrap;

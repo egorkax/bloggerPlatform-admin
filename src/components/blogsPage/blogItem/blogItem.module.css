@@ -1,11 +1,13 @@
 .blockBlog {
-    display: flex;
     width: 920px;
     height: 170px;
     margin-top: 15px;
     font-family: 'Inter';
 }
 
+.blogItem {
+    display: flex;
+}
 
 .blockImg {
     display: flex;
