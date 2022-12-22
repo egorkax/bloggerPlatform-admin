@@ -38,6 +38,9 @@ export const Blogs = () => {
                     <option value="4">From Z to A</option>
                 </select>
             </div>
+            <div className={s.blockButton}>
+                <Button superClassName={"editButton"}>Add blog</Button>
+            </div>
             {blogsMap}
             <Button superClassName={"showButton"}>
                 Show more

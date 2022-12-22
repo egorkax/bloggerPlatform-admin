@@ -16,3 +16,9 @@
     line-height: 36px;
     color: #1A1718;
 }
+
+.adminTitle {
+    margin-left: 7px;
+    font-size: 15px;
+    font-weight: 500;
+}

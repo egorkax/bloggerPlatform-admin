@@ -6,6 +6,7 @@ export const Header = () => {
         <header className={s.blockHeader}>
             <h1 className={s.header}>
                 Blogger Platform
+                <span className={s.adminTitle}>SuperAdmin</span>
             </h1>
         </header>
     );

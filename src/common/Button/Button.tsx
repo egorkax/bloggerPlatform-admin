@@ -1,6 +1,5 @@
 import React, {ButtonHTMLAttributes, DetailedHTMLProps} from 'react'
 import s from './button.module.css'
-import ButtonArrowIcon from "../../assets/icons/Button_arrow.svg";
 
 
 // тип пропсов обычной кнопки, children в котором храниться название кнопки там уже описан

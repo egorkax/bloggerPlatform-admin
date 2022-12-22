@@ -48,3 +48,10 @@
     color: #1A1718;
     padding-left: 10px;
 }
+
+.blockButton {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    max-width: 920px;
+}
