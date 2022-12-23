@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/bloggerPlatform-admin/static/css/main.22b6923e.css",
+    "main.js": "/bloggerPlatform-admin/static/js/main.797e2e56.js",
+    "static/js/787.c6af9339.chunk.js": "/bloggerPlatform-admin/static/js/787.c6af9339.chunk.js",
+    "index.html": "/bloggerPlatform-admin/index.html",
+    "static/media/Search.svg": "/bloggerPlatform-admin/static/media/Search.0d889d26bb8523df756a8e4c75eeaacc.svg",
+    "static/media/Edit.svg": "/bloggerPlatform-admin/static/media/Edit.c1553424fe186d0a0f3acdd4c04c60d9.svg",
+    "static/media/Ava.svg": "/bloggerPlatform-admin/static/media/Ava.95f623a2283422e9fce15aaecefc892e.svg",
+    "static/media/SettingBlog.svg": "/bloggerPlatform-admin/static/media/SettingBlog.d7a0b38eb190a641cd1829ca17cc113e.svg",
+    "static/media/Delete.svg": "/bloggerPlatform-admin/static/media/Delete.4fd2f4e57514e2def52e39fe70cccebb.svg",
+    "static/media/Back.svg": "/bloggerPlatform-admin/static/media/Back.d017553fc0a9c2a4f92534db46f5e911.svg",
+    "static/media/Close.svg": "/bloggerPlatform-admin/static/media/Close.494d20f9969ca6602e124f2a162f7721.svg",
+    "static/media/Header.svg": "/bloggerPlatform-admin/static/media/Header.415c311a5b9f4595f3e917488a440dff.svg",
+    "static/media/Button_arrow.svg": "/bloggerPlatform-admin/static/media/Button_arrow.b36f57bb027c75fa722cf58f317db1f5.svg",
+    "main.22b6923e.css.map": "/bloggerPlatform-admin/static/css/main.22b6923e.css.map",
+    "main.797e2e56.js.map": "/bloggerPlatform-admin/static/js/main.797e2e56.js.map",
+    "787.c6af9339.chunk.js.map": "/bloggerPlatform-admin/static/js/787.c6af9339.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22b6923e.css",
+    "static/js/main.797e2e56.js"
+  ]
+}
