@@ -1,9 +1,6 @@
-import React, {ReactNode} from "react";
+import React, {ReactNode, useEffect} from "react";
 import s from './basicModal.module.css'
 import CloseSvgIcon from "../../../assets/icons/Close.svg";
-import {useAppDispatch, useAppSelector} from "../../../reducers/store";
-import {Button} from "../../Button/Button";
-import {NavLink} from "react-router-dom";
 
 type ModalWindowPropsType = {
     header: string
@@ -20,6 +17,15 @@ export const BasicModal = (props: ModalWindowPropsType) => {
         closeWindow,
         children,
     } = props
+
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = 'hidden'
+        }
+        return (() => {
+            document.body.style.overflow = 'auto'
+        })
+    }, [props.isOpen])
 
     const wrapperClassName = `${s.wrapper} ${isOpen ? s.open : ''}`
 

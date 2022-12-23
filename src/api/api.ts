@@ -3,10 +3,15 @@ import axios from "axios";
 const instance = axios.create({
     // @ts-ignore
     // proxy: "https://api.codetabs.com/v1/proxy?quest=https://video-bloggers.vercel.app/",
-    // baseURL: 'https://video-bloggers.vercel.app/',
-    baseURL: "https://api.codetabs.com/v1/proxy?quest=https://blogger-platform.vercel.app/",
+    //baseURL: 'https://l1bloggers.vercel.app/',
+    //baseURL: 'https://blogger-platform.vercel.app/',
+    //baseURL: 'https://blogger-platform.vercel.app/',
+    baseURL: 'https://node-js-express-ioc-containers.vercel.app/',
+    //baseURL: "https://api.codetabs.com/v1/proxy?quest=https://blogger-platform.vercel.app/",
+    headers: {
+        authorization: 'Basic ZWdvci1rYXg6MjIxOTk3',
+    },
 })
-//
 
 
 export const blogsAPI = {
@@ -31,6 +36,23 @@ export const postsAPI = {
     getPost(postId: string) {
         return instance.get<PostType>(`posts/${postId}`)
     }
+}
+export const AuthAPI = {
+    login() {
+        return instance.post(`/auth/login`, {
+            loginOrEmail: "nik@mail.ru",
+            password: "nik@mail.ru"
+        })
+    },
+    register() {
+        return instance.post(`/auth/registration`, {
+            login: "nik@mail.ru",
+            email: "nik@mail.ru"
+        })
+    },
+    authMe() {
+        return instance.get(`/auth/me`)
+    },
 }
 export type ResponseType<T> = {
     pagesCount: number

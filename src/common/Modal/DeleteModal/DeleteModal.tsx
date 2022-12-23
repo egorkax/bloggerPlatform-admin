@@ -2,7 +2,7 @@ import {useAppDispatch} from "../../../reducers/store";
 import s from './deleteModal.module.css';
 import {Button} from "../../Button/Button";
 import {NavLink} from "react-router-dom";
-import React from "react";
+import React, {useEffect} from "react";
 import {BasicModal} from "../BasicModal/BasicModal";
 
 type DeletePackModalPropsType = {

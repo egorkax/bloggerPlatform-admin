@@ -43,6 +43,7 @@ export function* fetchBlogsWorkerSaga(): any {
 export const fetchBlogs = () => ({type: 'BLOGS/FETCH-BLOGS'})
 
 export function* fetchBlogWorkerSaga(action: ReturnType<typeof fetchBlog>): any {
+    console.log(13131)
     const resBlog = yield call(blogsAPI.getBlog, action.blogId)
     yield put(setBlogAC(resBlog.data))
     const res = yield call(blogsAPI.getBlogPosts, action.blogId)
@@ -52,7 +53,9 @@ export function* fetchBlogWorkerSaga(action: ReturnType<typeof fetchBlog>): any 
 export const fetchBlog = (blogId: string) => ({type: 'BLOGS/FETCH-BLOG', blogId})
 
 export function* createBlogWorkerSaga(action: ReturnType<typeof createBlog>): any {
+
     const res = yield call(blogsAPI.createBlog, action.payload)
+    console.log(res)
     yield put(addBlogAC(res.data))
 }
 

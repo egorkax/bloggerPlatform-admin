@@ -12,18 +12,19 @@ import {NewBlog} from "../components/blogsPage/newBlog/NewBlog";
 function App() {
     return (
         <div className={s.app}>
-            <Header/>
-            <div className={s.contentInfo}>
-                <Navbar/>
-                <div className={s.content}>
-                    <Routes>
-                        <Route path={'/blogs'} element={<Blogs/>}/>
-                        <Route path={'/newBlog'} element={<NewBlog/>}/>
-                        <Route path={'/blog/:blogId'} element={<Blog/>}/>
-                        <Route path={'/posts'} element={<Posts/>}/>
-                        <Route path={'/post/:postId'} element={<Post/>}/>
-
-                    </Routes>
+            <div>
+                <Header/>
+                <div className={s.contentInfo}>
+                    <Navbar/>
+                    <div className={s.content}>
+                        <Routes>
+                            <Route path={'/blogs'} element={<Blogs/>}/>
+                            <Route path={'/newBlog'} element={<NewBlog/>}/>
+                            <Route path={'/blog/:blogId'} element={<Blog/>}/>
+                            <Route path={'/posts'} element={<Posts/>}/>
+                            <Route path={'/post/:postId'} element={<Post/>}/>
+                        </Routes>
+                    </div>
                 </div>
             </div>
         </div>

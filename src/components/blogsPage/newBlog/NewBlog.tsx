@@ -35,9 +35,10 @@ export const NewBlog = (props: any) => {
             }
             if (!values.webSite) {
                 errors.webSite = 'Required'
-            } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.webSite)) {
-                errors.webSite = 'Invalid  address'
             }
+            // else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.webSite)) {
+            //     errors.webSite = 'Invalid  address'
+            // }
             if (!values.blogDescription) {
                 errors.blogDescription = 'Required'
             }
@@ -52,6 +53,9 @@ export const NewBlog = (props: any) => {
             navigate('/blogs')
         }
     })
+    const blogNameError = formik.errors.blogName && formik.touched.blogName ? formik.errors.blogName : ''
+    const websiteError = formik.errors.webSite && formik.touched.webSite ? formik.errors.webSite : ''
+    const blogDescError = formik.errors.blogDescription && formik.touched.blogDescription ? formik.errors.blogDescription : ''
 
 
     return (
@@ -69,28 +73,31 @@ export const NewBlog = (props: any) => {
 
             <form onSubmit={formik.handleSubmit}>
                 <Input
-                    name='Blog Name'
+                    name='blogName'
                     id='blogName'
                     type='text'
                     label='Blog Name'
+                    error={blogNameError}
                     value={formik.values.blogName}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                 />
                 <Input
-                    name='Blog Name'
+                    name='webSite'
                     id='webSite'
                     type='text'
                     label='Website'
+                    error={websiteError}
                     value={formik.values.webSite}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                 />
                 <Input
-                    name='Blog Description'
+                    name='blogDescription'
                     id='blogDescription'
                     type='text'
                     label='Blog Description'
+                    error={blogDescError}
                     value={formik.values.blogDescription}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
